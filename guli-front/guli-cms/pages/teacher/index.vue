@@ -8,7 +8,7 @@
         </h2>
         <section class="c-tab-title">
           <a id="subjectAll" title="全部" href="#">全部</a>
-          <!-- <c:forEach var="subject" items="${subjectList }">
+         <!--<c:forEach var="subject" items="${subjectList }">
                             <a id="${subject.subjectId}" title="${subject.subjectName }" href="javascript:void(0)" onclick="submitForm(${subject.subjectId})">${subject.subjectName }</a>
           </c:forEach>-->
         </section>
@@ -104,7 +104,7 @@ export default {
         })
     },
     methods:{
-            //分页切换的方法
+    //分页切换的方法
     //参数是页码数
     gotoPage(page) {
       teacherApi.getTeacherList(page,8)
